@@ -1,0 +1,12 @@
+diff -rupN libtpms-0.10.2.old/configure.ac libtpms-0.10.2/configure.ac
+--- libtpms-0.10.2.old/configure.ac	2026-01-02 16:56:41.000000000 +0100
++++ libtpms-0.10.2/configure.ac	2026-04-24 18:48:10.107848137 +0200
+@@ -349,7 +349,7 @@ if test "x$enable_hardening" != "xno"; t
+ 	AC_SUBST([HARDENING_LDFLAGS])
+ fi
+ 
+-AM_CFLAGS="$CFLAGS $COVERAGE_CFLAGS -Wall -Werror -Wshadow -Wreturn-type -Wsign-compare -Wno-self-assign -Wmissing-prototypes"
++AM_CFLAGS="$CFLAGS $COVERAGE_CFLAGS -Wall -Wshadow -Wreturn-type -Wsign-compare -Wno-self-assign -Wmissing-prototypes"
+ AM_CFLAGS="$AM_CFLAGS"
+ AM_LDFLAGS="$LDFLAGS $COVERAGE_LDFLAGS"
+ 

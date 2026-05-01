@@ -1,0 +1,12 @@
+diff -rupN libtpms-0.10.2.old/src/tpm_library.c libtpms-0.10.2/src/tpm_library.c
+--- libtpms-0.10.2.old/src/tpm_library.c	2026-01-02 16:56:41.000000000 +0100
++++ libtpms-0.10.2/src/tpm_library.c	2026-04-24 18:45:51.442936156 +0200
+@@ -435,7 +435,7 @@ static unsigned char *TPMLIB_GetPlaintex
+                                           const char *endtag,
+                                           size_t *length)
+ {
+-    char *start, *end;
++    const char *start, *end;
+     unsigned char *plaintext = NULL;
+ 
+     start = strstr(stream, starttag);
